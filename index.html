@@ -4,19 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
   <body>
     <div class="container">
-      <h1>hello</h1>
-      <a href="" class="btn btn-primary">Click me</a>
+      <div class="weather-app">
+        <form class="search-engine">
+          <div class="row">
+            <div class="col-6">
+              <input type="text" placeholder="Enter a city" />
+            </div>
+            <div class="col-2">
+              <input type="submit" value="Search" />
+            </div>
+            <div class="col-4">
+              <button class="btn btn btn-primary">Current location</button>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-7">
+            <h1>Sydney</h1>
+            <hr />
+            <ul>
+              <li>Tuesday, 7.10</li>
+            </ul>
+          </div>
+          <div class="col-5">
+            <img src="src/sunny.png" alt="clear" />17 ℃ | F
+            <p>Mostly sunny</p>
+            <ul>
+              <li>Humidity: 70%</li>
+              <li>Wind Speed: 6 km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <small>
+        <a href="https://github.com/kiyooteru/weather-app-new" target="_blank">
+          Open-source code
+        </a>
+        by Kinga Miśkiewicz
+      </small>
     </div>
     <script src="src/app.js"></script>
   </body>
