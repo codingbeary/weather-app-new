@@ -15,44 +15,56 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="search-engine">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="search-engine">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="city-input"
+                  id="city-input"
+                  placeholder="Enter a city..."
+                />
+              </div>
+              <div class="col-2">
+                <input type="submit" value="Search" />
+              </div>
+              <div class="col-4">
+                <button class="btn btn btn-primary">Current location</button>
+              </div>
+            </div>
+          </form>
+          <h1>Sydney, Australia</h1>
+          <hr />
+          <ul>
+            <li class="current-date">Tuesday, 7.10</li>
+          </ul>
           <div class="row">
-            <div class="col-6">
-              <input type="text" placeholder="Enter a city" />
+            <div class="col-7">
+              <img src="src/sunny.png" alt="clear" id="icon" />
+              <strong class="temperature" id="temperature">17</strong>
+              <span class="units">℃ | <a href="#"> F </a> </span>
+              <p>Mostly sunny</p>
             </div>
-            <div class="col-2">
-              <input type="submit" value="Search" />
+            <div class="col-5">
+              <ul>
+                <li>Humidity: 70%</li>
+                <li>Wind Speed: 6 km/h</li>
+              </ul>
             </div>
-            <div class="col-4">
-              <button class="btn btn btn-primary">Current location</button>
-            </div>
-          </div>
-        </form>
-        <div class="row">
-          <div class="col-7">
-            <h1>Sydney</h1>
-            <hr />
-            <ul>
-              <li>Tuesday, 7.10</li>
-            </ul>
-          </div>
-          <div class="col-5">
-            <img src="src/sunny.png" alt="clear" />17 ℃ | F
-            <p>Mostly sunny</p>
-            <ul>
-              <li>Humidity: 70%</li>
-              <li>Wind Speed: 6 km/h</li>
-            </ul>
           </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/kiyooteru/weather-app-new"
+            target="_blank"
+          >
+            Open-source code
+          </a>
+          by Kinga Miśkiewicz
+        </small>
       </div>
-      <small>
-        <a href="https://github.com/kiyooteru/weather-app-new" target="_blank">
-          Open-source code
-        </a>
-        by Kinga Miśkiewicz
-      </small>
     </div>
     <script src="src/app.js"></script>
   </body>
