@@ -31,7 +31,9 @@ ul {
   color: #b0b0b2;
   font-size: 16px;
 }
-
+li:first-letter {
+  text-transform: capitalize;
+}
 .current-date {
   padding: 0px 0px 0px 5px;
 }
@@ -51,5 +53,7 @@ img {
 p {
   text-align: center;
   color: #70757a;
+}
+p:first-letter {
   text-transform: capitalize;
 }
