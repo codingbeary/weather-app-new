@@ -29,7 +29,10 @@ function displayTemperature(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+
+  celciusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
@@ -53,7 +56,32 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("Sydney");
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  celciuslink.classList.remove("active");
+  fahrenheitlink.classList.add("active");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelciusTemperature(event) {
+  event.preventDefault();
+  celciuslink.classList.add("active");
+  fahrenheitlink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+}
+
+let celciusTemperature = null;
 
 let form = document.querySelector("#search-form");
 addEventListener("submit", handleSubmit);
+
+let fahrenheitlink = document.querySelector("#fahrenheit-link");
+fahrenheitlink.addEventListener("click", displayFahrenheitTemperature);
+
+let celciuslink = document.querySelector("#celcius-link");
+celciuslink.addEventListener("click", displayCelciusTemperature);
+
+search("Sydney");

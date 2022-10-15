@@ -54,9 +54,17 @@ img {
   top: -15px;
 }
 p {
-  text-align: center;
+  position: relative;
   color: #70757a;
+  left: 50px;
 }
 p:first-letter {
   text-transform: capitalize;
+}
+.weather-app .active {
+  color: black;
+  cursor: default;
+}
+.weather-app .active:hover {
+  text-decoration: none;
 }
