@@ -12,10 +12,9 @@ body {
   border-radius: 15px;
 }
 
-.city-input {
+.form-control {
   border: 1.5px solid #b0b0b2;
   border-radius: 5px;
-  width: 270px;
 }
 
 h1 {

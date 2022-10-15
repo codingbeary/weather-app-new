@@ -18,21 +18,19 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form class="search-engine">
+          <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-6">
+              <div class="col-9">
                 <input
                   type="text"
-                  class="city-input"
+                  class="form-control"
                   id="city-input"
                   placeholder="Enter a city..."
+                  autocomplete="off"
                 />
               </div>
-              <div class="col-2">
-                <input type="submit" value="Search" />
-              </div>
-              <div class="col-4">
-                <button class="btn btn btn-primary">Current location</button>
+              <div class="col-3">
+                <input type="submit" value="Search" class="btn btn-primary" />
               </div>
             </div>
           </form>
