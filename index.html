@@ -10,6 +10,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
@@ -35,7 +36,7 @@
               </div>
             </div>
           </form>
-          <h1>Sydney, Australia</h1>
+          <h1 id="city"></h1>
           <hr />
           <ul>
             <li class="current-date">Tuesday, 7.10</li>
@@ -43,14 +44,14 @@
           <div class="row">
             <div class="col-7">
               <img src="src/sunny.png" alt="clear" id="icon" />
-              <strong class="temperature" id="temperature">17</strong>
+              <strong class="temperature" id="temperature"></strong>
               <span class="units">℃ | <a href="#"> F </a> </span>
-              <p>Mostly sunny</p>
+              <p id="description"></p>
             </div>
             <div class="col-5">
               <ul>
-                <li>Humidity: 70%</li>
-                <li>Wind Speed: 6 km/h</li>
+                <li>Humidity: <span id="humidity"> </span>%</li>
+                <li>Wind speed: <span id="wind-speed"></span> km/h</li>
               </ul>
             </div>
           </div>
