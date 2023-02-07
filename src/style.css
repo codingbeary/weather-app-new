@@ -1,6 +1,5 @@
 body {
   font-family: Google Sans, arial, sans-serif;
-  background-color: #eeeeee;
 }
 .weather-app-wrapper {
   max-width: 600px;
@@ -11,8 +10,6 @@ body {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 15px;
-  background-color: white;
-  box-shadow: -4px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .form-control {
@@ -20,14 +17,8 @@ body {
   border-radius: 5px;
 }
 
-.btn {
-  background-color: #596e79;
-  color: white;
-  box-shadow: -4px 3px 12px rgba(0, 0, 0, 0.2);
-}
-
 h1 {
-  color: #596e79;
+  color: #70757a;
   margin-bottom: 0px;
 }
 hr {
